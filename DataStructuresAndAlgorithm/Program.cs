@@ -6,7 +6,7 @@ namespace DataStructuresAndAlgorithm
         static string FilePath = @"D:\gittestrep\DataStructuresAndAlgorithm\Files\Search.txt";
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the option to execute:\n 1.Binary search\n 2.Anagram \n 3.Replace String\n 4.Insertion Sort \n 5.Exit");
+            Console.WriteLine("Enter the option to execute:\n 1.Binary search\n 2.Anagram \n 3.Replace String\n 4.Insertion Sort \n 5.Bubble Sort \n 6.PrimeNumber\n 7.Exit");
            
             bool flag = true;
             while (flag)
@@ -50,6 +50,14 @@ namespace DataStructuresAndAlgorithm
                             array[i] = Convert.ToInt32(Console.ReadLine());
                         }
                         bubblesort.bubbleSorting(array);
+                        break;
+                    case 6:
+                        PrimeNumber primeNumber = new PrimeNumber();
+                        Console.WriteLine("Enter a number to check if it's prime or not:");
+                        primeNumber.IsPrimeNumber(Convert.ToInt32(Console.ReadLine()));
+                        break;
+                    case 7:
+                        flag = false;
                         break;
                     default:
                         Console.WriteLine("Please enter a valid option");
