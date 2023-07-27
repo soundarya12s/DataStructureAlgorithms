@@ -39,6 +39,18 @@ namespace DataStructuresAndAlgorithm
                         }
                         sort.InsertionSorting(arr,size);
                         break;
+                    case 5:
+                        BubbleSort bubblesort = new BubbleSort();
+                        Console.WriteLine("Enter the size of the array:");
+                        int size1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the array elements:");
+                        int[] array = new int[size1];
+                        for (int i = 0; i < size1; i++)
+                        {
+                            array[i] = Convert.ToInt32(Console.ReadLine());
+                        }
+                        bubblesort.bubbleSorting(array);
+                        break;
                     default:
                         Console.WriteLine("Please enter a valid option");
                         flag = false;
