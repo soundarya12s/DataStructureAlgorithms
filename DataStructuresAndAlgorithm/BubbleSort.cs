@@ -14,10 +14,10 @@ namespace DataStructuresAndAlgorithm
            
            
           
-            for (int j = 0; j <= intArray.Length - 2; j++)
+            for (int j = 0; j < intArray.Length - 1; j++)
             {
                 //intArray.Length - 2
-                for (int i = 0; i <= intArray.Length - 2; i++)
+                for (int i = 0; i < intArray.Length - 1; i++)
                 {
                     count = count + 1;
                     if (intArray[i] > intArray[i + 1])

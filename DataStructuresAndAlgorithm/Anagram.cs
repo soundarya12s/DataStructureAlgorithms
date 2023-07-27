@@ -30,13 +30,18 @@ namespace DataStructuresAndAlgorithm
                         count++;
                     }
                 }
-                if(char1.Length.Equals(count))
+                if (char1.Length.Equals(count))
+                {
                     Console.WriteLine("Given strings are anagram");
+                    
+                }
+                   
                 else
                     Console.WriteLine("Given strings are not anagram");
             }
             else
                 Console.WriteLine("Given strings are not anagram");
+           
         }
     }
 }
