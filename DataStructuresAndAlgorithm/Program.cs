@@ -20,17 +20,13 @@ namespace DataStructuresAndAlgorithm
                         search.ReadTextFileAndSearch(FilePath);
                         break;
                     case 2:
-                        Anagram anagram= new Anagram();
-                        anagram.CheckAnagram();
+                       flag=false;
                         break;
-                    case 3:
-                        ReplaceString replaceString = new ReplaceString();
-                        replaceString.StringReplace();
-                        break;
-                    //default:
-                    //    Console.WriteLine("Please enter a valid option");
-                    //    flag= false;
-                    //    break;
+                  
+                    default:
+                       Console.WriteLine("Please enter a valid option");
+                       flag= false;
+                       break;
                 }
             }
         }
