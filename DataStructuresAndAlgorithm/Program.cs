@@ -24,13 +24,12 @@ namespace DataStructuresAndAlgorithm
                         anagram.CheckAnagram();
                         break;
                     case 3:
-                        ReplaceString replaceString = new ReplaceString();
-                        replaceString.StringReplace();
+                       flag=false;
                         break;
-                    //default:
-                    //    Console.WriteLine("Please enter a valid option");
-                    //    flag= false;
-                    //    break;
+                    default:
+                      Console.WriteLine("Please enter a valid option");
+                      flag= false;
+                       break;
                 }
             }
         }
