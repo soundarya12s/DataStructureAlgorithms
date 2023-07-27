@@ -6,7 +6,7 @@ namespace DataStructuresAndAlgorithm
         static string FilePath = @"D:\gittestrep\DataStructuresAndAlgorithm\Files\Search.txt";
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the option to execute:\n 1.Binary search\n 2.Anagram \n 3.Exit");
+            Console.WriteLine("Enter the option to execute:\n 1.Binary search\n 2.Anagram \n 3.Replace String\n 4.Insertion Sort \n 5.Exit");
            
             bool flag = true;
             while (flag)
@@ -27,10 +27,22 @@ namespace DataStructuresAndAlgorithm
                         ReplaceString replaceString = new ReplaceString();
                         replaceString.StringReplace();
                         break;
-                    //default:
-                    //    Console.WriteLine("Please enter a valid option");
-                    //    flag= false;
-                    //    break;
+                    case 4:
+                        InsertionSort sort = new InsertionSort();
+                        Console.WriteLine("Enter the size of the array:");
+                        int size = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the array elements:");
+                        int[]  arr= new int[size];
+                        for(int i = 0; i < size;i++)
+                        {
+                            arr[i]= Convert.ToInt32(Console.ReadLine());
+                        }
+                        sort.InsertionSorting(arr,size);
+                        break;
+                    default:
+                        Console.WriteLine("Please enter a valid option");
+                        flag = false;
+                        break;
                 }
             }
         }
