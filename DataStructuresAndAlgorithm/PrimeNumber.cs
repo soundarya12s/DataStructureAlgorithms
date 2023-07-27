@@ -8,25 +8,27 @@ namespace DataStructuresAndAlgorithm
 {
     public class PrimeNumber
     {
-        public void IsPrimeNumber(int number)
+        public void IsPrimeNumber()
         {
-            bool IsPrime = true;
-            for (int i = 2; i < number / 2; i++)
+            int count;
+            int num = 1000; 
+            for (int i = 0; i <= num; i++)
             {
-                if (number % i == 0)
+                count = 0;
+                for (int j = 2; j <= i / 2; j++)
                 {
-                    IsPrime = false;
-                    break;
+                    if (i % j == 0)
+                    {
+                        count++;
+                        break;
+                    }
+                }
+                if (count == 0)
+                {
+                    Console.WriteLine(i);
                 }
             }
-            if (IsPrime)
-            {
-                Console.Write("Number is Prime.");
-            }
-            else
-            {
-                Console.Write("Number is not Prime.");
-            }
+
         }
     }
 }

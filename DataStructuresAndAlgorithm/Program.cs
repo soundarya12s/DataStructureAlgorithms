@@ -32,10 +32,10 @@ namespace DataStructuresAndAlgorithm
                         Console.WriteLine("Enter the size of the array:");
                         int size = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Enter the array elements:");
-                        int[]  arr= new int[size];
+                        string[]  arr= new string[size];
                         for(int i = 0; i < size;i++)
                         {
-                            arr[i]= Convert.ToInt32(Console.ReadLine());
+                            arr[i]= Console.ReadLine();
                         }
                         sort.InsertionSorting(arr,size);
                         break;
@@ -53,8 +53,7 @@ namespace DataStructuresAndAlgorithm
                         break;
                     case 6:
                         PrimeNumber primeNumber = new PrimeNumber();
-                        Console.WriteLine("Enter a number to check if it's prime or not:");
-                        primeNumber.IsPrimeNumber(Convert.ToInt32(Console.ReadLine()));
+                        primeNumber.IsPrimeNumber();
                         break;
                     case 7:
                         flag = false;

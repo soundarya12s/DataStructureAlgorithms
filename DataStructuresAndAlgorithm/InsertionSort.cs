@@ -8,7 +8,7 @@ namespace DataStructuresAndAlgorithm
 {
     public class InsertionSort
     {
-        public int[] InsertionSorting(int[] array, int length)
+        public string[] InsertionSorting(string[] array, int length)
         {
             for (int i = 1; i < length; i++)
             {
@@ -16,7 +16,7 @@ namespace DataStructuresAndAlgorithm
                 var flag = 0;
                 for (int j = i - 1; j >= 0 && flag != 1;)
                 {
-                    if (key < array[j])
+                    if (string.Compare(key, array[j])<0)
                     {
                         array[j + 1] = array[j];
                         j--;
