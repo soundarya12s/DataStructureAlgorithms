@@ -54,6 +54,7 @@ namespace DataStructuresAndAlgorithm
                     case 6:
                         PrimeNumber primeNumber = new PrimeNumber();
                         primeNumber.IsPrimeNumber();
+
                         break;
                     case 7:
                         flag = false;
